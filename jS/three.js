@@ -20,10 +20,26 @@ while(i <= 10){
 	 console.log(1 + "*" + i + " = " + 1*i);
  }
  */
- 
- let i = 1;
- while (i <= 24){
-	 
-	 console.log(i);
-	 i ++;
- }
+
+//const num = prompt('Enter a positive number: ');
+
+//console.log(`The factors of ${num} is:`);
+/*
+for(let i = 1; i <= 24; i++) {
+
+    if(24 % i == 0) {
+        console.log(i);
+    }
+}
+*/
+// while
+let i = 1;
+let n = 24;
+
+while (i <= n){
+	
+	if (n % i == 0){
+		console.log(i);
+	}
+	i++;
+}
