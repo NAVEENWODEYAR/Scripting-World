@@ -8,7 +8,3 @@ function add (a,b, c = 20){
 }
 let r = add(10,10);
 //console.log(r);
-
-
-
-// Function with return
