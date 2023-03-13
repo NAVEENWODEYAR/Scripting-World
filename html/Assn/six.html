@@ -1,0 +1,71 @@
+<!-- Program to check weather a given object is empty or not. -->
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title> Javascript Object.</title>
+        </head>
+        <body>
+            <script>
+                // Javascript object program., 
+
+                let ab = {id:1, name:'Bhas', salary:100000,id:2, name:'Monu', salary:70000,id:3, name:'A',salary:50000,id:4, name:'B',salary:90000};        // Javascript Object creation.
+                
+                //console.log(ab);    
+                document.write(ab);     // Printing the Javascript object in the browser., which isn't possible.
+                document.write("<br>")
+                
+                document.write(Object.keys(ab));        // Printing all the keys in the object.
+                document.write("<br>")
+                
+                //document.write(Object.values(ab));        // Printing all the keys in the object.
+                document.write("<br>")
+
+                        for (property in ab){
+                        document.write(ab[property]);        // Printing all the keys in the object.                        
+
+                        document.write("<br>")
+                        document.write("<br>")
+
+                        
+                    }
+
+
+                document.write(Object.keys(ab).length);      // Check the length of the keys in the object.   
+                document.write("<br>")
+                
+
+                document.write(Object.values(ab).length);       // Checking the length of the values in the object.
+                document.write("<br>")
+                
+                    // Code from FS Republic Day Repo. 
+                    // let emp = { id: 101, name: 'Rahul', salary: 45000, email: "rahul@pm.com" }
+                    //             /* 
+                    //             console.log(emp.id)
+                    //             console.log(emp.name)
+                    //             console.log(emp.salary) */
+
+                    //             for (property in emp) {
+                    //                 //console.log(emp.property)
+                    //                 console.log(emp[property])
+                    //             }
+
+
+
+
+
+                    // Checking the object weather it is empty or not..
+
+                    if ( Object.values(ab).length > 0){
+                            document.write("The object is not empty");
+                    }
+                    else {
+                            document.write("The object is empty");
+                    }
+
+                    
+           </script>
+        </body>
+</html>
