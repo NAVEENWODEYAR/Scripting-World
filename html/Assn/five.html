@@ -1,0 +1,28 @@
+<!-- WAP to program to print the greatest number in three numbers.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Greatest among the three numbers </h1>
+    <script>
+        let a = parseInt(prompt("Enter a number"));
+        let b = parseInt(prompt("Enter a number"));
+        let c = parseInt(prompt("Enter a number"));
+
+        if (a > b && a > c){
+            document.write(a + " is grater than " + b + " and " + c );
+        }
+        else if(b > a && b > c){
+            document.write(b + " is grater than " + a + " and " + c );
+
+        }else {
+            document.write(c + " is grater than " + a + " and " +b);
+        }
+    </script>
+</body>
+</html>
