@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Javascript events.  -->
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title> Event handling </title>
+
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+                <script>
+                        function change_color(){
+                            document.getElementById('one').style.backgroundColor="green";
+                            //docume.getElemrntById('on').class="btn btn-danger";
+                        }
+                </script>
+        </head>
+        <body style="background-color: blanchedalmond; text-align: center;" >
+                <h1> JavaScript Events </h1><br><br><br><br>
+
+                <div class="container">
+                    <div class="row">
+                      <div class="col-sm">
+                        On Mouseover:
+                        <label for=""> mouse over to change the button bg color </label><br>
+                        <button id="one" style="background-color: blueviolet;" onclick="change_color()"> Mouseover </button>
+                        <!-- <button id="on" type="button" class="btn btn-success" onclick="change_color()"> Mouseover </button> -->
+                      </div>
+
+
+                      <div class="col-sm">
+                        On Mouseout:
+                      </div>
+
+                      <div class="col-sm">
+                        On Click:
+                      </div>
+
+                    </div>
+                  </div>
+                        <br><br><br><br><br><br><br><br><br>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm">
+                        On Mouseover:
+                      </div>
+
+                      <div class="col-sm">
+                        On Mouseout:
+                      </div>
+                      
+                      <div class="col-sm">
+                        On Click:
+                      </div>
+
+                    </div>
+                  </div>
+        </body>
+</html>
