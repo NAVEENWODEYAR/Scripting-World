@@ -11,13 +11,62 @@
                 // Events. 
 
                 function myFn() {
+                    //alert("Don't Click again!");
+                    document.getElementById('1').style.backgroundColor="green";
+                    document.getElementById('2').style.backgroundColor="blue";
+                }
+
+                function myFn1() {
+                    //alert("Don't Click again!");
+                    //document.getElementById('1').style.backgroundColor="green";
+                    document.getElementById('2').style.backgroundColor="blue";
+                }
+
+                function myFn2() {
+                    //alert("Don't Click again!");
+                    //document.getElementById('1').style.backgroundColor="green";
+                    document.getElementById('3').style.backgroundColor="red";
+                }
+
+                function myFn3() {
+                    //alert("Don't Click again!");
+                    // document.getElementById('1').style.backgroundColor="green";
+                    document.getElementById('4').style.backgroundColor="blue";
+                }
+
+                function myFn4() {
+                    //alert("Don't Click again!");
+                    // document.getElementById('1').style.backgroundColor="green";
+                    document.getElementById('5').style.backgroundColor="orange";
+                }
+
+                function myFn5() {
+                    //alert("Don't Click again!");
+                    // document.getElementById('1').style.backgroundColor="green";
+                    document.getElementById('6').innerHTML="Button";
+                }
+
+                function myFn6() {
                     alert("Don't Click again!");
+                    // document.getElementById('1').style.backgroundColor="green";
+                    let n = document.getElementById('eight').value;
+
+                    document.getElementById('eight').value = n.toUpperCase();
                 }
             </script>
         </head>
-        <body style="background-color: blue; text-align: center;">
-            <h4 style="color: bisque;">Javascript Event & event handling </h4>
-            <button style="color: blueviolet;" onclick="myFn()">Button 1</button><br><br>
-            <button style="color: blueviolet; background: #d06497;" onmouseover="myFn()">Button 2</button><br><b></b>
+        <body style="background-color: rgb(120, 120, 123); text-align: center;">
+            <h1 style="color: bisque;">Javascript Event & Event handling </h1>
+            <button id="1" style="color: blueviolet;" onclick="myFn()"> Mouse Click </button><br><br>
+            <button id="2" style="background: #d06497;" onmouseover="myFn1()"> Mouseover </button><br><br><br>
+            <button id="3" style="background-color: aliceblue;" onmouseout="myFn2()"> MouseOut </button><br><br>
+            <button id="4" style="background-color: antiquewhite;" ondblclick="myFn3()"> Double Click </button><br><br>
+            <button id="5" style="background-color: rgb(7, 72, 151);" onfocus="myFn4()"> OnFocus </button><br><br>
+            <button id="6" style="background-color: rgb(1, 56, 1);" onclick="myFn5()"> Onblur </button><br><br><br><br>
+
+            <!-- <button id="7" style="background-color: blueviolet;" onblur="myfn6()"> Name </button><br><br> -->
+            Name: <input type="text" id="eight" onblur="myFn6()" value="Name"/>
+            
+            <!-- <button onclick="this.innerHTML = Date()">The time</button> -->   
         </body>
 </html>
