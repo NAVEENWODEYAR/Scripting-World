@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- Digital Clock  -->
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title> Digital Clock </title>
+            <link rel="stylesheet" href="./one.css">
+            
+            <script src="./oon.js" type="text/javascript" defer></script>
+        </head>
+        <body>
+            <div class="container">
+                <span id="hrs"> 00 </span>
+                <span id> : </span>
+
+                <span id="mts"> 00 </span>
+                <span id> : </span>
+
+                <span id="secs"> 00 </span>
+                <span id="sessions"> AM</span>
+                
+            </div>
+
+
+
+            <script>
+                function displayTime() {
+                    var dateTime = new date();
+
+                    var hrs = dateTime.getHours();
+                    var minutes = dateTime.getMinutes();
+                    var seconds = dateTime.getSeconds();
+                    var session = document.getElementById('sessions');
+
+
+                    document.getElementById('hrs').innerHTML= hrs;
+                    document.getElementById('mts').innerHTML= minutes;
+                    document.getElementById('secs').innerHTML= seconds;
+                }
+                displayTime();
+                setInterval(displayTime,5)
+            </script>
+        </body>
+</html>

@@ -99,19 +99,52 @@ let js = [{"id":1,"first_name":"Kalila","last_name":"McClarence","email":"kmccla
 {"id":99,"first_name":"Chere","last_name":"Bugg","email":"cbugg2q@ebay.com","gender":"Female","ip_address":"36.155.92.14"},
 {"id":100,"first_name":"Cornela","last_name":"Vanyushkin","email":"cvanyushkin2r@zdnet.com","gender":"Female","ip_address":"38.12.146.149"}];
 
-console.log(typeof js);
-console.log(js.length);
 
-// for (elements of js){
-//     console.log(elements.email);
-// }
 
-let i = 0;
- while (i <= js.length - 1) {
+function read_Data() {
+    let rows = "";
 
-        if ( i == 49) {
-            break;
-        }
-        console.log(js[i].ip_address);
-        i++;
- }
+    for (j of js) {
+
+        rows += `<tr>
+
+                    <td> ${j.id} </td>        
+                    <td> ${j.first_name} </td>        
+                    <td> ${j.last_name} </td>        
+                    <td> ${j.email} </td>        
+                    <td> ${j.gender} </td>        
+                    <td> ${j.ip_address} </td>        
+                </tr>`
+
+    }
+
+    document.getElementById('tb').innerHTML = rows;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// console.log(typeof js);
+// console.log(js.length);
+
+// // for (elements of js){
+// //     console.log(elements.email);
+// // }
+
+// let i = 0;
+//  while (i <= js.length - 1) {
+
+//         if ( i == 49) {
+//             break;
+//         }
+//         console.log(js[i].ip_address);
+//         i++;
+//  }

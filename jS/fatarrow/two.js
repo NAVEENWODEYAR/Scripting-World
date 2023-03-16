@@ -16,3 +16,15 @@ let a = (a,b) => {
 }
 let ra = a(2,2);
 console.log(ra);
+
+
+// Fatarrow function with single statement .,
+let s = () => console.log("Good Luck");
+s();
+
+// Fatarrow function witout () in the case of single parameter., 
+const msg = name => {
+    console.log("Hello");
+    console.log(name);
+}
+msg("bob");
