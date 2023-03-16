@@ -1021,5 +1021,5 @@ for (m of mock)  {
                 <td> ${m.ip_address} </td> 
             </tr>`
             }
-            document.getElementById('abc').innerHTML = "Good Luck";
+            document.getElementById('abc').innerHTML = row;
 }
