@@ -1,0 +1,45 @@
+<!-- Javascript in the html to read data from the array and write into the table.,  -->
+
+<html>
+    <head>
+        <title> Table Data </title>
+
+        <script>
+            let ad = [{id:1, name:'Bhas', desn:'Manager', email:'bhas@gmail.com'},
+                    {id:1, name:'Bhas', desn:'Manager', email:'bhas@gmail.com'}];
+
+
+                    function write() {
+
+                        let row = "";
+
+                        for (a of ad) {
+                            row += `<tr> 
+                                        <td> ${a.id} </td>    
+                                        <td> ${a.name} </td>    
+                                        <td> ${a.desn} </td>    
+                                        <td> ${a.email} </td>    
+                                    </tr>`
+                        }
+
+                        document.getElementById('as').innerHTML = row;
+
+                    }
+        </script>
+    </head>
+
+    <body onload="write()">
+        <h4> Table With Data </h4>
+
+        <table border="2">
+            <thead>
+                <th> ID </th>
+                <th> Name </th>
+                <th> Desn </th>
+                <th> E-mail </th>
+            </thead>
+
+            <tbody id="as"></tbody>
+        </table>
+    </body>
+</html>

@@ -999,25 +999,27 @@ let mock = [{"id":1,"first_name":"Allistir","last_name":"Kunzler","email":"akunz
 {"id":999,"first_name":"Townsend","last_name":"Gormally","email":"tgormallyrq@ucla.edu","gender":"Male","ip_address":"244.98.111.65"},
 {"id":1000,"first_name":"Caroljean","last_name":"Bywaters","email":"cbywatersrr@indiegogo.com","gender":"Female","ip_address":"128.173.71.72"}];
 
+// console.log(typeof mock);
+// console.log(mock.length);
+// console.log(mock);
 
 
-// Reading the data from the array and writinf it into the table.,
 
-function read1() {
 
-    let rows = "";
 
-    for (m of mock) {
-            rows += `<tr> 
-                        <td> ${m.id} </td>
-                        <td> ${m.first_name} </td>
-                        <td> ${m.last_name} </td>
-                        <td> ${m.email} </td>
-                        <td> ${m.gender} </td>
-                        <td> ${m.ip_address} </td>
-                       
-                    </tr>` 
-    }
+function readRow() {
 
-    document.getElementById('ab').innerHTML = rows;
+let row = "";
+
+for (m of mock)  {
+    row += `<tr>
+                <td> ${m.id} </td> 
+                <td> ${m.first_name} </td> 
+                <td> ${m.last_name} </td> 
+                <td> ${m.email} </td> 
+                <td> ${m.gender} </td> 
+                <td> ${m.ip_address} </td> 
+            </tr>`
+            }
+            document.getElementById('abc').innerHTML = "Good Luck";
 }
