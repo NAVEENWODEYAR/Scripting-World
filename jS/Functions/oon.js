@@ -1,6 +1,6 @@
 
 function displayTime() {
-    var dateTime = new date();
+    var dateTime = new Date();
 
     var hrs = dateTime.getHours();
     var minutes = dateTime.getMinutes();

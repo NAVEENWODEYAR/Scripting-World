@@ -27,7 +27,7 @@
 
             <script>
                 function displayTime() {
-                    var dateTime = new date();
+                    var dateTime = new Date();
 
                     var hrs = dateTime.getHours();
                     var minutes = dateTime.getMinutes();
@@ -40,7 +40,7 @@
                     document.getElementById('secs').innerHTML= seconds;
                 }
                 displayTime();
-                setInterval(displayTime,5)
+                setInterval(displayTime,1)
             </script>
         </body>
 </html>
