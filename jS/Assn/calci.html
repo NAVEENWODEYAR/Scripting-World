@@ -1,0 +1,65 @@
+<!-- Simple Calculator using javascript.,  -->
+
+<html>
+    <head>
+        <title> Simple Calculator </title>
+
+        <style></style>
+
+        <script>
+            function clr() {
+                document.getElementById('view').value="0";
+            }
+
+
+            function show(input) {
+                 document.getElementById('view').value +=input;
+            }
+
+            function calc() {
+                var out = eval(document.getElementById('view').value);
+                document.getElementById('view').value=out;
+            }
+        </script>
+    </head>
+
+    <body>
+        <h4> CALCULATOR </h4>
+
+        <table border="2">
+            <caption> <h2> CALCULATOR </h2></caption>
+            <tr>
+                <td colspan="3"> <input type="text" id="view"></td>
+                <td> <button onclick="clr()" id="cl"> AC </button></td>
+            </tr>
+
+            <tr>
+                <td> <button  onclick="show(7)"> 7 </button> </td>
+                <td> <button onclick="show(8)"> 8 </button> </td>
+                <td> <button onclick="show(9)"> 9 </button> </td>
+                <td> <button onclick="show('*')"> * </button> </td>
+            </tr>
+
+            <tr>
+                <td align="center"> <button onclick="show(6)"> 6 </button> </td>
+                <td> <button onclick="show(5)"> 5 </button> </td>
+                <td> <button onclick="show(4)"> 4 </button> </td>
+                <td> <button onclick="show('/')"> / </button> </td>
+            </tr>
+
+            <tr>
+                <td> <button onclick="show(3)"> 3 </button> </td>
+                <td> <button onclick="show(2)"> 2 </button> </td>
+                <td> <button onclick="show(1)"> 1</button> </td>
+                <td> <button onclick="show('+')"> + </button> </td>
+            </tr>
+
+            <tr>
+                <td> <button onclick="show(0)"> 0 </button> </td>
+                <td> <button onclick="show('%')"> % </button> </td>
+                <td> <button onclick="show('-')"> - </button> </td>
+                <td> <button onclick="calc()"> = </button> </td>
+            </tr>
+        </table>
+    </body>
+</html>
