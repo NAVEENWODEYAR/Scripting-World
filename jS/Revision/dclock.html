@@ -6,6 +6,26 @@
     </head>
 
     <body>
-        
+        <h3> DIGITAL CLOCK </h3>
+
+            <p id="ppp"> The time is   </p>
+
+
+            <script>
+
+                function tm() {
+                let d = new Date();
+
+                let hrs = d.getHours();
+                let mts = d.getMinutes();
+                let secs = d.getSeconds();
+
+                document.getElementById('ppp').innerHTML = hrs + " " + mts + " "+ secs + "  PM";
+                }
+
+                tm();
+                setInterval(tm,1);
+            </script>
     </body>
+
 </html>
