@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<!-- Javascript callback functions  -->
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>  Callback Method </title>
+        </head>
+        <body>
+            <h2> Employee Data </h2>
+                <table border="4">
+                    <thead>
+                        <th> Id </th>
+                        <th> Name </th>
+                        <th> E-mail </th>
+                        <th> Salary </th>
+                    </thead>
+                        <tbody id="tb"></tbody>
+                </table>
+            
+        </body>
+            <!-- Script to construct the table body  -->
+            <script>
+                    let emp = [{id:1, Name:"Bhaskar", Email:"bhas@gmail.com", Salary:98765},
+                                {id:2, Name:"Monu", Email:"monu@gmail.com", Salary:99765}];
+
+                    let createEmp = (emp,callback) => {
+                            setTimeout ( () => {
+                                emp.push(emp);
+                                callback();
+
+                            },4000)
+                    }
+
+                    let getEmp = () => {
+                        setTimeout (()=>{
+
+                            let r = '';
+
+                                for(emp of emp) { 
+                                r = r + `<tr>
+                                            <td> ${emp.id}<td>
+                                            <td> ${emp.Name}<td>
+                                            <td> ${emp.E-mail}<td>
+                                            <td> ${emp.Salary}<td>
+                                        </tr>`
+                                    }
+                                    document.getElementById('tb').innerHTML = "Test";
+                        },2000)
+                    }
+
+                    createEmp({id:3, Name:"Ganga", Email:"ganga@gmail.com", Salary:98760},getEmp);
+            </script>
+    </html>
