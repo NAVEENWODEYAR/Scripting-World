@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title> React App </title>
+            <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+            <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+            <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        </head>
+        <body>
+            <span id="spn"></span>
+                <script type="text/babel">
+                    let Message = () => { return <h1> React inside the html!.,.. Jordan Walke created the React ., </h1>}
+
+                    const container = document.getElementById('spn');
+                    const root = ReactDOM.createRoot(container);
+                        root.render(<Message />);
+                </script>
+        </body>
+    </html>
