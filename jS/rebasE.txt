@@ -1,0 +1,34 @@
+Git rebase is a powerful command in Git that allows you to integrate changes from one branch into another. 
+Unlike merge, which combines changes from multiple branches into a single branch, 
+		Rebase rewrites the commit history to create a linear progression of commits. This can help create a cleaner, more linear project history.
+
+
+STEPS,
+ git rebase <base-branch>
+git rebase -i <base-branch>
+
+
+1. Rebasing a Feature Branch onto Master
+
+git checkout feature-branch
+git rebase master
+
+
+2. Resolving Conflicts During Rebase
+
+git add <file>
+git rebase --continue
+git rebase --abort
+
+
+3. Interactive Rebase for Cleaning Up Commits
+git rebase -i HEAD~n
+git rebase --continue
+
+
+4. Rebase with Upstream Changes
+
+git fetch origin
+git rebase origin/master
+
+		
